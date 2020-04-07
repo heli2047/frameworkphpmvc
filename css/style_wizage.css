@@ -1,0 +1,125 @@
+
+/* Formatação das Telas Wizage */
+
+
+.ch6 h6{
+  font-size:12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nsis small{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nsis a:link small{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container-grey{
+    background-color: #dcdcdc;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.nav-item a:link {
+color: #495057;
+
+}
+
+.nav-tabs .nav-link.active {
+  color:#dc3545;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: bold;
+}
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+   body{
+       margin-top: 10%;
+   }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    body{
+        margin-top: 10%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    body{
+        margin-top: 10%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    body{
+        margin-top: 10%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    body{
+        margin-top:35%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 421px) and (max-width: 480px) {
+    
+    body{
+        margin-top: 30%;
+    }
+    
+  }
+
+  @media (max-width: 420px) {
+    
+    body{
+        margin-top: 55%;
+    }
+    
+  }
