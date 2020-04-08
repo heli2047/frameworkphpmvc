@@ -7,44 +7,37 @@ use MF\Controller\Action;
 use MF\Model\Container;
 
 
-// Os Models
-use App\Models\Produto;
-use App\Models\Info;
-
-
-
-
 
 class IndexController extends Action {
 
+
+    //Exemplo de Criação de ligação associação de ligação com Index.
     public function index() {
 
+    //    $produto = Container::getModel('Produto');
 
+    //    $produtos = $produto->getProdutos();
 
-        $produto = Container::getModel('Produto');
+    //    $this->view->dados = $produtos;
 
-        $produtos = $produto->getProdutos();
+    $this->render('index');
+  }
+      
+}
 
-        $this->view->dados = $produtos;
-
-       // $this->view->dados = array('Sofa', 'Cadeira', 'Cama');
-        $this->render('index', 'layout');
-    }
-
-    public function sobreNos(){
+    //public function sobreNos(){
       //  $this->view->dados  = array('Nootebook', 'Smartphone');
 
-        $info = Container::getModel('Info');
+     //   $info = Container::getModel('Info');
 
-        $informacoes = $info -> getInfo();
+     //   $informacoes = $info -> getInfo();
 
-        $this->view->dados = $informacoes;
+     //   $this->view->dados = $informacoes;
 
-        $this->render('SobreNos', 'layout');
-    }
+     //   $this->render('SobreNos', 'layout');
+  //  }
 
-    
-}
+
 
 
 ?>
